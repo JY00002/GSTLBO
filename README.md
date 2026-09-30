@@ -23,10 +23,7 @@
 
 ## 🚀 About the Project
 
-This work addresses the **heterogeneous UAV swarm cooperative task allocation (HUSCTA) problem with temporal task chains**. Capability heterogeneity and target-level precedence constraints make the problem highly coupled: each target must be executed cooperatively by a team of UAVs whose capabilities cover its ordered sub-task chain, and the completion time depends not only on route length but also on the waiting time induced by the temporal chain. We propose a **Grouping and Structure-Guided Teaching-Learning-Based Optimization (GSTLBO)** framework that explicitly models a group-level solution structure and couples initialization with search:
-
-- **GSNN construction** (structure supply): team formation, randomized recursive bisection (RRB) of the targets, and nearest-neighbor routing jointly determine the UAV grouping, the target partitioning and a shared visitation order;
-- **Structure-guided search**: Intra-team variable neighborhood descent (**IntraVND**) refines the shared visitation order, and inter-team adaptive neighborhood search (**InterANS**) reassigns complete target chains among groups, both operating inside the subspace defined by the construction.
+This work addresses the **heterogeneous UAV swarm cooperative task allocation (HUSCTA) problem with temporal task chains**, where capability heterogeneity and target-level precedence constraints are tightly coupled. We propose a **Grouping and Structure-Guided Teaching-Learning-Based Optimization (GSTLBO)** framework to efficiently solve this NP-hard problem. The methodological details are described in the paper.
 
 The repository currently includes:
 
@@ -128,15 +125,13 @@ If you find this code useful in your research, please cite our paper:
 ```bibtex
 @article{wei2026gstlbo,
   title   = {Structure-Guided Construction and Search for Heterogeneous UAV Swarm Cooperative Task Allocation with Temporal Task Chains},
-  author  = {Wei, Shengyun and Sun, Zhaolong and Wang, Zhenyi and Kong, Dekang and Mi, Haibo and Liao, Feifan and Huang, Chuibing},
+  author  = {xxx},
   journal = {XX},
   year    = {2026},
   volume  = {XX},
   pages   = {XX--XX}
 }
 ```
-
-*(Bibliographic details will be completed upon publication.)*
 
 ---
 
@@ -145,6 +140,7 @@ If you find this code useful in your research, please cite our paper:
 We sincerely thank the following open-source projects for their valuable code and inspiration:
 
 - [TLC-CBBA](https://github.com/ycchao0406/TLC_CBBA) - For the CBBA baseline implementation reference
+- [CPMCTA-AMTLBO](https://github.com/yuxinyongMath16/CPMCTA-AMTLBO) - For the AMTLBO baseline implementation reference
 - [PARCO](https://github.com/ai4co/parco) - For the instance (NPZ) format and test-case generation framework reference
 
 We also thank the authors of the compared baseline algorithms for making their methods available to the community.
